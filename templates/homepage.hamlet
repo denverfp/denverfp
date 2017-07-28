@@ -2,11 +2,11 @@
     <div .container>
         <div .row>
             <h1 .header>
-                Yesod—a modern framework for blazing fast websites
+                DenverFP
             <h2>
-                Fast, stable & spiced with great community
-            <a href="http://www.yesodweb.com/book/" .btn.btn-info.btn-lg>
-                Read the Book
+                The Denver Functional Programming Meetup Group
+            <a href="http://www.meetup.com/denverfp/" .btn.btn-info.btn-lg>
+                Join us on Meetup.com!
 
 <div .container>
     <!-- Starting

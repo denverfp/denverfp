@@ -11,6 +11,12 @@ This is a Haskell application using the Yesod web framework.
 3. Setup Postgresql according to the instructions below.
 3. `stack test` will build all the dependencies and run the test suite.
 
+# Development
+
+1. Run `stack build yesod-bin` to install the dev tools
+2. Run `stack exec -- yesod devel` to run the development server
+3. Open `https://localhost:3000` to see the website.
+
 # Database Setup
 
 The application uses PostgreSQL.
