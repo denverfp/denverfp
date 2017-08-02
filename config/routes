@@ -9,3 +9,8 @@
 /comments CommentR POST
 
 /profile ProfileR GET
+
+/panels            PanelIndexR GET POST
+/panels/new        NewPanelR   GET
+!/panels/#PanelId   PanelR      GET POST
+

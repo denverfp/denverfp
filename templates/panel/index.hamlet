@@ -1,0 +1,6 @@
+<h1>
+    Panels are Fun!
+
+<ul>
+  $forall panel <- panels
+    <li> #{tshow panel}

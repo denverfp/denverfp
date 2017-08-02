@@ -1,0 +1,6 @@
+<h1>New Panel
+
+<form method=post action=@{PanelIndexR} enctype=#{enctype}>
+    ^{formW}
+    <p>It also doesn't include the submit button.
+    <button>Submit

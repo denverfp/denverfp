@@ -46,6 +46,18 @@ dependencies:
 - case-insensitive
 - wai
 
+default-extensions:
+- LambdaCase
+- QuasiQuotes
+- ViewPatterns
+- TemplateHaskell
+- GADTs
+- ScopedTypeVariables
+- LambdaCase
+- NoImplicitPrelude
+- OverloadedStrings
+
+
 # The library contains all of our application code. The executable
 # defined below is just a thin wrapper.
 library:
