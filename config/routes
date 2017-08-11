@@ -10,7 +10,11 @@
 
 /profile ProfileR GET
 
-/panels            PanelIndexR GET POST
-/panels/new        NewPanelR   GET
-!/panels/#PanelId   PanelR      GET POST
+/panels                         PanelIndexR GET POST
+!/panels/new                    NewPanelR   GET
+/panels/#PanelId                PanelR      GET
 
+/panels/#PanelId/questions      QuestionR POST
+
+/questions/#QuestionId/upvote   UpVoteR   POST
+/questions/#QuestionId/downvote DownVoteR POST

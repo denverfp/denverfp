@@ -13,13 +13,31 @@ Email
 Comment json -- Adding "json" causes ToJSON and FromJSON instances to be derived.
     message Text
     userId UserId Maybe
-    deriving Eq
-    deriving Show
+
+    deriving Eq Show
 
 Panel
     title       Text
     description Text
 
     deriving Eq Show
+
+Question
+    body        Text
+    asker       UserId
+    panel       PanelId
+
+    deriving Eq Show
+
+Vote
+    question    QuestionId
+    voter       UserId
+    approve     Bool
+
+    Primary question voter
+    UniqueVote question voter
+
+    deriving Eq Show
+
 
  -- By default this file is used in Model.hs (which is imported by Foundation.hs)

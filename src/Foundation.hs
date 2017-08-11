@@ -106,6 +106,11 @@ instance Yesod App where
                     , menuItemRoute = ProfileR
                     , menuItemAccessCallback = isJust muser
                     }
+                , NavbarLeft $ MenuItem
+                    { menuItemLabel = "Panels"
+                    , menuItemRoute = PanelIndexR
+                    , menuItemAccessCallback = isJust muser
+                    }
                 , NavbarRight $ MenuItem
                     { menuItemLabel = "Login"
                     , menuItemRoute = AuthR LoginR
@@ -150,7 +155,7 @@ instance Yesod App where
     isAuthorized PanelIndexR _ = isAuthenticated
     isAuthorized (PanelR _) _  = isAuthenticated
 
-    isAuthorized _ _           = return Authorized
+    isAuthorized _ _           = isAuthenticated
 
     -- This function creates static content files in the static folder
     -- and names them based on a hash of their content. This allows

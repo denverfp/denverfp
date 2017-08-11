@@ -1,0 +1,27 @@
+<td>
+    #{questionBody question}
+
+<td>
+    <form method=post action=@{UpVoteR questionId}>
+        $if Just True == userApproved
+            <button .btn .btn-success>
+                <span .glyphicon .glyphicon-arrow-up>
+                (#{tshow upvotes})
+        $else
+            <button .btn>
+                <span .glyphicon .glyphicon-arrow-up>
+                (#{tshow upvotes})
+            
+        
+
+<td>
+    <form method=post action=@{DownVoteR questionId}>
+        $if Just False == userApproved
+            <button .btn .btn-danger>
+                <span .glyphicon .glyphicon-arrow-down>
+                (#{tshow downvotes})
+        $else
+            <button .btn>
+                <span .glyphicon .glyphicon-arrow-down>
+                (#{tshow downvotes})
+

@@ -1,6 +1,15 @@
-<h1>
-    Panels are Fun!
+<div .container>
+    <div .row>
+        <h1>
+            Panels are Fun!
 
-<ul>
-  $forall panel <- panels
-    <li> #{tshow panel}
+    <div .row>
+        <ul>
+          $forall panel <- panels
+            <li> 
+                <a href=@{PanelR (entityKey panel)}>
+                    #{tshow panel}
+
+    <div .row>
+        <a href=@{NewPanelR}>
+            New Panel

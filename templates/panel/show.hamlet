@@ -1,0 +1,18 @@
+<div .container>
+    <div .row>
+        <h2>#{panelTitle panel}
+        <p>#{panelDescription panel}
+
+    <div .row>
+        <h2>Questions
+        <form method=post action=@{QuestionR panelId} enctype=#{enctype}>
+            ^{qform}
+            <button .btn .btn-primary>
+                Ask
+        <table .table .table-bordered .table-striped>
+            <thead>
+                <th>Question
+                <th>Upvotes
+                <th>Downvotes
+            $forall question <- questions
+                <tr> ^{question}
